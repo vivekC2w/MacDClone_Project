@@ -1,0 +1,154 @@
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container {
+    margin: auto;
+}
+
+.jumbotron {
+    background-image: url("backImg.jpg");
+    background-size: cover;
+	background-position: center;
+    background-repeat: no-repeat;
+	min-height: 100vh;
+    position: relative;
+}
+
+/* .navbar-nav{
+    color: yellow;
+} */
+
+h1 {
+    color: rgb(208, 47, 47);
+}
+
+p {
+    color: rgb(208, 47, 47); 
+}
+
+.card {
+  transition: all 800ms ease;
+  
+}
+
+.card .card-title{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+
+}
+
+.card .card-text{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+
+}
+
+.card-title:hover {
+  display: block;
+  -webkit-line-clamp: unset;
+  -webkit-box-orient: unset;
+  overflow: unset;
+}
+
+.card-text:hover {
+  display: block;
+  -webkit-line-clamp: unset;
+  -webkit-box-orient: unset;
+  overflow: unset;
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease-in-out;
+    transform: scale(1.05);
+  }
+  
+  .card-img-top:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+ .logo {
+    position: relative;
+    height: auto;
+    left: 0px;
+    width: 30px;
+ } 
+
+ .btn-primary {
+    color: #e5f906;
+    background-color: #f18f05;
+    border-color: #f9e506;
+ }
+
+ .btn-primary:hover {
+    color: #f9e506;
+    background-color: #f9b806;
+    border-color: #f9a806;
+ }
+
+ .btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 0, 0.918);
+ }
+
+ @media screen and (max-width: 786px) {
+  .jumbotron {
+    background-image: url('./mobileViewImg.jpg');
+    /* background-size: contain; */
+  }
+}
+
+ /* For screens smaller than 576px (extra small devices) */
+@media (max-width: 575.98px) {
+    .col-md-3 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .container h1 {
+      color: #f98306;
+    }
+
+    .container p {
+      color: #f98306;
+    }
+  }
+  
+  /* For screens between 576px and 768px (small devices) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .col-md-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* For screens between 768px and 992px (medium devices) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .col-md-6 {
+      flex: 0 0 33.3333%;
+      max-width: 33.3333%;
+    }
+  }
+  
+  /* For screens between 992px and 1200px (large devices) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .col-md-6 {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+  }
+  
+  /* For screens greater than or equal to 1200px (extra large devices) */
+  @media (min-width: 1200px) {
+    .col-md-6 {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+  }
+  
