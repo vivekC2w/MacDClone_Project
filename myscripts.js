@@ -1,6 +1,9 @@
-$(document).ready(function() {
-    $(".card").click(function() {
-      window.location.href = "detail-page.html";
-    });
-  });
+// $(document).ready(function() {
+//     $(".card").click(function() {
+//       window.location.href = "burger.html";
+//     });
+//   });
   
+function goToBurgerPage() {
+  window.location.href = "burger.html";
+}
