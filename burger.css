@@ -3,6 +3,10 @@
     justify-content: space-around;
 }
 
+/* .navbar-toggler-icon {
+    box-sizing: none;
+} */
+
 
 * {
     box-sizing: border-box;
