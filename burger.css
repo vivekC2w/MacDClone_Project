@@ -7,6 +7,12 @@
     box-sizing: none;
 } */
 
+.logo {
+    position: relative;
+    height: auto;
+    left: 0px;
+    width: 30px;
+ } 
 
 * {
     box-sizing: border-box;
