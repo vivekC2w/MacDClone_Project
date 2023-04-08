@@ -3,17 +3,6 @@
     justify-content: space-around;
 }
 
-/* .navbar-toggler-icon {
-    box-sizing: none;
-} */
-
-.logo {
-    position: relative;
-    height: auto;
-    left: 0px;
-    width: 30px;
- } 
-
 * {
     box-sizing: border-box;
     -webkit-font-smoothing: antialised;
@@ -101,7 +90,6 @@ h1 {
     text-align: left;
     font-size: 14px;
     letter-spacing: -.13px;
-    /* margin-bottom: 10px; */
     margin: 10px;
 }
 
@@ -110,11 +98,18 @@ h1 {
     padding: auto;
 }
 
+.logo {
+    position: relative;
+    height: auto;
+    left: 0px;
+    width: 30px;
+ } 
+
 .burger {
     /* display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px; */
-  }
+}
   
   ul {
     list-style: none;

@@ -8,11 +8,11 @@
 }
 
 .jumbotron {
-    background-image: url("backImg.jpg");
+    background-image: url('../assets/backImg.jpg');
     background-size: cover;
-	background-position: center;
+	  background-position: center;
     background-repeat: no-repeat;
-	min-height: 100vh;
+	  min-height: 100vh;
     position: relative;
 }
 
@@ -38,10 +38,9 @@ p {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;  
   overflow: hidden;
-
 }
 
-.card .card-text{
+.card .card-text {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;  
@@ -68,7 +67,7 @@ p {
     background-color: #f8f9fa;
     transition: background-color 0.3s ease-in-out;
     transform: scale(1.05);
-  }
+}
   
   .card-img-top:hover {
     transform: scale(1.1);
@@ -100,7 +99,7 @@ p {
 
  @media screen and (max-width: 786px) {
   .jumbotron {
-    background-image: url('./mobileViewImg.jpg');
+    background-image: url('../assets/mobileViewImg.jpg');
     /* background-size: contain; */
   }
 }
