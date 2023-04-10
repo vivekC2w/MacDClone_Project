@@ -1,17 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>My Website</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./style/style.css" rel="stylesheet">
-    <script src="./src/myscripts.js"></script>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="./style/style.css" rel="stylesheet" />
+    <script src="./src/myscripts.js" defer></script>
   </head>
+
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#"><img src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/arches-logo_108x108.jpg" alt="Logo" class="logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#"
+        ><img
+          src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/arches-logo_108x108.jpg"
+          alt="Logo"
+          class="logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -39,9 +59,16 @@
         <div class="row">
           <div class="col-md-8 offset-md-2">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search...">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search..."
+                id="search-input"
+              />
               <div class="input-group-append">
-                <button class="btn btn-primary" type="button">Go</button>
+                <button class="btn btn-primary" type="button" id="search-btn">
+                  Go
+                </button>
               </div>
             </div>
           </div>
@@ -52,107 +79,203 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-lg-3 mb-4">
-          <div class="card" onclick="goToBurgerPage()">
-            <img class="card-img-top" src="./assets/card1.png" alt="Card image cap">
+          <div class="card" id="myCard1" onclick="navigate()">
+            <img
+              class="card-img-top"
+              src="./assets/card1.png"
+              alt="Card image cap"
+            />
             <div class="card-body">
-              <h5 class="card-title">Piri Piri McSpicy Chicken Burger + Fries (R)</h5>
-              <p class="card-text">The iconic McSpicy burger but now with a Piripiri McSpicy Chicken Burger and Fries</p>
+              <h5 class="card-title">
+                Piri Piri McSpicy Chicken Burger + Fries (R)
+              </h5>
+              <p class="card-text">
+                The iconic McSpicy burger but now with a Piripiri McSpicy
+                Chicken Burger and Fries
+              </p>
               <h6 class="card-subtitle mb-2 text-muted">$99.99</h6>
-              <a href="#" class="btn btn-primary">Add+</a>
+              <a href="#" class="btn btn-primary addBtn" data-index="0">Add+</a>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 mb-4">
-          <div class="card" onclick="goToBurgerPage()">
-            <img class="card-img-top" src="./assets/card2.png" alt="Card image cap">
+          <div class="card" id="myCard2" onclick="navigate()">
+            <img
+              class="card-img-top"
+              src="./assets/card2.png"
+              alt="Card image cap"
+            />
             <div class="card-body">
-              <h5 class="card-title">Piri Piri McSpicy Chicken Burger + Fries (L)</h5>
-              <p class="card-text">The iconic McSpicy burger but now with a Piripiri McSpicy Chicken Burger and Fries</p>
+              <h5 class="card-title">
+                Piri Piri McSpicy Chicken Burger + Fries (L)
+              </h5>
+              <p class="card-text">
+                The iconic McSpicy burger but now with a Piripiri McSpicy
+                Chicken Burger and Fries
+              </p>
               <h6 class="card-subtitle mb-2 text-muted">$149.99</h6>
-              <a href="#" class="btn btn-primary">Add+</a>
+              <a
+                href="#"
+                class="btn btn-primary addBtn"
+                onclick="showOrderSummary"
+                data-index="1"
+                >Add+</a
+              >
             </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 mb-4">
-            <div class="card" onclick="goToBurgerPage()">
-              <img class="card-img-top" src="./assets/card3.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Piri Piri McSpicy Chicken Burger + McSpicy Chicken Burger</h5>
-                <p class="card-text">The iconic McSpicy burger but now with a Piripiri McSpicy Chicken Burger and Fries</p>
-                <h6 class="card-subtitle mb-2 text-muted">$199.99</h6>
-                <a href="#" class="btn btn-primary">Add+</a>
-              </div>
+          <div class="card" id="myCard3" onclick="navigate()">
+            <img
+              class="card-img-top"
+              src="./assets/card3.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Piri Piri McSpicy Chicken Burger + McSpicy Chicken Burger
+              </h5>
+              <p class="card-text">
+                The iconic McSpicy burger but now with a Piripiri McSpicy
+                Chicken Burger and Fries
+              </p>
+              <h6 class="card-subtitle mb-2 text-muted">$199.99</h6>
+              <a href="#" class="btn btn-primary addBtn" data-index="2">Add+</a>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 mb-4">
-            <div class="card" onclick="goToBurgerPage()">
-              <img class="card-img-top" src="./assets/card4.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">McSaver Piri Piri Big Spicy Wrap Paneer Meal</h5>
-                <p class="card-text">Treat Yourself to the iconic Big Spicy Piripiri McSpicy Chicken Burger and Fries</p>
-                <h6 class="card-subtitle mb-2 text-muted">$249.99</h6>
-                <a href="#" class="btn btn-primary">Add+</a>
-              </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card" id="myCard4" onclick="navigate()">
+            <img
+              class="card-img-top"
+              src="./assets/card4.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                McSaver Piri Piri Big Spicy Wrap Paneer Meal
+              </h5>
+              <p class="card-text">
+                Treat Yourself to the iconic Big Spicy Piripiri McSpicy Chicken
+                Burger and Fries
+              </p>
+              <h6 class="card-subtitle mb-2 text-muted">$249.99</h6>
+              <a href="#" class="btn btn-primary addBtn" data-index="3">Add+</a>
             </div>
           </div>
-         </div>   
+        </div>
+      </div>
 
-          <div class="row">
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card" onclick="goToBurgerPage()">
-                  <img class="card-img-top" src="./assets/card5.png" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Piri Piri McSpicy Chicken Burger</h5>
-                    <p class="card-text">Experience a Piri Piri explosion with the all Piripiri McSpicy Chicken Burger and Fries</p>
-                    <h6 class="card-subtitle mb-2 text-muted">$99.99</h6>
-                    <a href="#" class="btn btn-primary">Add+</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card" onclick="goToBurgerPage()">
-                  <img class="card-img-top" src="./assets/card6.png" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Piri Piri McSpicy Paneer Burger</h5>
-                    <p class="card-text">Experience a Piri piri explosion with the all Piripiri McSpicy Chicken Burger and Fries</p>
-                    <h6 class="card-subtitle mb-2 text-muted">$149.99</h6>
-                    <a href="#" class="btn btn-primary">Add+</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-4">
-                  <div class="card" onclick="goToBurgerPage()">
-                    <img class="card-img-top" src="./assets/card7.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Piri Piri McSpicy Paneer Burger + McVeggie Burger</h5>
-                      <p class="card-text">The iconic McSpicy burger but now with a Piripiri McSpicy Chicken Burger and Fries</p>
-                      <h6 class="card-subtitle mb-2 text-muted">$199.99</h6>
-                      <a href="#" class="btn btn-primary">Add+</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-4">
-                  <div class="card" onclick="goToBurgerPage()">
-                    <img class="card-img-top" src="./assets/card8.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Piri Piri McSpicy Paneer Burger + Fries ( R )</h5>
-                      <p class="card-text">The iconic McSpicy burger but now with a Piripiri McSpicy Chicken Burger and Fries</p>
-                      <h6 class="card-subtitle mb-2 text-muted">$249.99</h6>
-                      <a href="#" class="btn btn-primary">Add+</a>
-                    </div>
-                  </div>
-                </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card" id="myCard5" onclick="navigate()">
+            <img
+              class="card-img-top"
+              src="./assets/card5.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Piri Piri McSpicy Chicken Burger</h5>
+              <p class="card-text">
+                Experience a Piri Piri explosion with the all Piripiri McSpicy
+                Chicken Burger and Fries
+              </p>
+              <h6 class="card-subtitle mb-2 text-muted">$99.99</h6>
+              <a href="#" class="btn btn-primary addBtn" data-index="4">Add+</a>
             </div>
-          </div>  
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card" id="myCard6" onclick="navigate()">
+            <img
+              class="card-img-top"
+              src="./assets/card6.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Piri Piri McSpicy Paneer Burger</h5>
+              <p class="card-text">
+                Experience a Piri piri explosion with the all Piripiri McSpicy
+                Chicken Burger and Fries
+              </p>
+              <h6 class="card-subtitle mb-2 text-muted">$149.99</h6>
+              <a href="#" class="btn btn-primary addBtn" data-index="5">Add+</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card" id="myCard7" onclick="navigate()">
+            <img
+              class="card-img-top"
+              src="./assets/card7.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Piri Piri McSpicy Paneer Burger + McVeggie Burger
+              </h5>
+              <p class="card-text">
+                The iconic McSpicy burger but now with a Piripiri McSpicy
+                Chicken Burger and Fries
+              </p>
+              <h6 class="card-subtitle mb-2 text-muted">$199.99</h6>
+              <a href="#" class="btn btn-primary addBtn" data-index="6">Add+</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card" id="myCard8" onclick="navigate()">
+            <img
+              class="card-img-top"
+              src="./assets/card8.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Piri Piri McSpicy Paneer Burger + Fries ( R )
+              </h5>
+              <p class="card-text">
+                The iconic McSpicy burger but now with a Piripiri McSpicy
+                Chicken Burger and Fries
+              </p>
+              <h6 class="card-subtitle mb-2 text-muted">$249.99</h6>
+              <a href="#" class="btn btn-primary addBtn" data-index="7">Add+</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <footer class="bg-light text-center py-3">
-            <p>Copyright © 2023
-              <a href="#">Bootstrap Website</a>
-            </p>
-          </footer>
-      
-          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        </body>
-      </html>
+    <footer class="bg-light text-center py-3">
+      <p>
+        Copyright © 2023
+        <a href="#">Bootstrap Website</a>
+      </p>
+    </footer>
+
+    <!-- Order - Summary -->
+    <div id="order-summary" class="order-summary">
+      <h3>Your Order Summary</h3>
+      <p id="selected-product"></p>
+      <p id="order-price"></p>
+      <p id="total-bill"></p>
+      <button onclick="hideOrderSummary()">Close</button>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
