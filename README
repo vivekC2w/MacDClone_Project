@@ -21,7 +21,7 @@ A footer with company information and social media links
 
 Installation
 To run this project, clone the repository using the following command:
-git clone 
+git clone https://github.com/vivekC2w/MacDClone_Project.git
 
 
 Then, open the index.html file in your preferred web browser to view the application.
