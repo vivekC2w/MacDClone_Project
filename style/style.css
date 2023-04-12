@@ -7,6 +7,46 @@
     margin: auto;
 }
 
+#about {
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#about p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+#about .btn-primary {
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 2rem;
+  padding: 0.75rem 2rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  #about h2 {
+    font-size: 4rem;
+  }
+  
+  #about p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  #about .btn-primary {
+    margin-top: 2rem;
+  }
+}
+
+
 .jumbotron {
     background-image: url('../assets/backImg.jpg');
     background-size: cover;
@@ -133,6 +173,70 @@ p {
  .order-summary button:hover {
   background-color: #e6e6e6;
  }
+
+ #contact {
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#contact p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+#contact form label {
+  font-weight: 700;
+}
+
+#contact .form-control {
+  border-radius: 2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+#contact button {
+  border-radius: 2rem;
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+#contact address {
+  font-style: normal;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  #contact h2 {
+    font-size: 4rem;
+  }
+  
+  #contact p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  #contact .form-control {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  }
+  
+  #contact button {
+    margin-top: 2rem;
+  }
+  
+  #contact address {
+    margin-top: 2rem;
+  }
+}
 
  @media screen and (max-width: 786px) {
   .jumbotron {
