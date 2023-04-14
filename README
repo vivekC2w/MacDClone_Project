@@ -1,0 +1,31 @@
+Project Name: McDonald's Web App Project
+
+Introduction
+This is a web application that emulates the user interface and functionality of McDonald's website. 
+The application is built using HTML, CSS, and JavaScript programming languages with the help of the 
+Bootstrap framework.
+
+Features
+The McDonald's web app has the following features:
+
+A navigation bar with the McDonald's logo and four navigation links (Home, About, Services, and Contact)
+A search box with a Go button, and an appended background image in the header section
+Eight product cards displaying the images and names of McDonald's meals and burgers
+Card hover effect, where the card color fades and the image zooms in
+Clicking on a card takes the user to a new page, burger.html, where the selected product's information is displayed
+The burger.html page shows the selected product's image, name, a paragraph for the card, a list of ingredients, and 
+nutrition summary
+An "Add+" button is present on the card, which adds the selected product to the cart and displays the purchase summary, 
+including the product's price and GST
+A footer with company information and social media links
+
+Installation
+To run this project, clone the repository using the following command:
+git clone https://github.com/vivekC2w/MacDClone_Project.git
+
+
+Then, open the index.html file in your preferred web browser to view the application.
+
+Usage
+The McDonald's web app is designed to mimic the functionality and user experience of the McDonald's website. Users 
+can navigate to different sections of the site using the navigation bar, add items to the cart by clicking on the product card. 
