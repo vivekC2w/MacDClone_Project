@@ -9,6 +9,7 @@
 
 #about {
   text-align: center;
+  padding: auto;
 }
 
 #about h2 {
@@ -176,6 +177,9 @@ p {
 
  #contact {
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
 }
 
 #contact h2 {
@@ -214,6 +218,17 @@ p {
   margin-top: 1.5rem;
 }
 
+.row-cols-2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-cols-2 > div {
+  width: 50%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
 @media (min-width: 992px) {
   #contact h2 {
     font-size: 4rem;
@@ -231,6 +246,7 @@ p {
   
   #contact button {
     margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   
   #contact address {
