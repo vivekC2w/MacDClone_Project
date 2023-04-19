@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar-nav {
     display: flex;
     justify-content: space-around;
@@ -24,6 +28,7 @@
   margin-bottom: 1.5rem;
 }
 
+
 #about .btn-primary {
   font-size: 1.25rem;
   font-weight: 700;
@@ -31,6 +36,7 @@
   padding: 0.75rem 2rem;
   margin-top: 1.5rem;
 }
+
 
 @media (min-width: 992px) {
   #about h2 {
@@ -45,6 +51,7 @@
   #about .btn-primary {
     margin-top: 2rem;
   }
+
 }
 
 
@@ -56,10 +63,6 @@
 	  min-height: 100vh;
     position: relative;
 }
-
-/* .navbar-nav{
-    color: yellow;
-} */
 
 h1 {
     color: rgb(208, 47, 47);
@@ -224,9 +227,13 @@ p {
 }
 
 .row-cols-2 > div {
-  width: 50%;
-  padding: 0 15px;
-  box-sizing: border-box;
+  width: 98%;
+  margin: auto;
+}
+
+.contact {
+  width: 98%;
+  margin: auto;
 }
 
 @media (min-width: 992px) {
@@ -259,52 +266,44 @@ p {
     background-image: url('../assets/mobileViewImg.jpg');
     /* background-size: contain; */
   }
+
+  .image {
+    width: 100%;
+    margin-top: 24px;
+  }
+
+  .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .container h1 {
+    color: #f98306;
+  }
+
+  .container p {
+    color: #f98306;
+  }
+
+  .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .container h1 {
+    color: #f98306;
+  }
+
+  .container p {
+    color: #f98306;
+  }
+
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  #contact {
+    padding: 10px;
+  }
+
 }
-
- /* For screens smaller than 576px (extra small devices) */
-@media (max-width: 575.98px) {
-    .col-md-3 {
-      flex: 0 0 100%;
-      max-width: 100%;
-    }
-    .container h1 {
-      color: #f98306;
-    }
-
-    .container p {
-      color: #f98306;
-    }
-  }
-  
-  /* For screens between 576px and 768px (small devices) */
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    .col-md-6 {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* For screens between 768px and 992px (medium devices) */
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    .col-md-6 {
-      flex: 0 0 33.3333%;
-      max-width: 33.3333%;
-    }
-  }
-  
-  /* For screens between 992px and 1200px (large devices) */
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    .col-md-6 {
-      flex: 0 0 25%;
-      max-width: 25%;
-    }
-  }
-  
-  /* For screens greater than or equal to 1200px (extra large devices) */
-  @media (min-width: 1200px) {
-    .col-md-6 {
-      flex: 0 0 25%;
-      max-width: 25%;
-    }
-  }
   
